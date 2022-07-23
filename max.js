@@ -28,7 +28,7 @@
 // var max = Math.max(business, minister, army);
 // console.log('Largest is', max);
 
-function findLargest(first, second) {
+/* function findLargest(first, second) {
     if (first > second) {
         return first;
     }
@@ -38,4 +38,37 @@ function findLargest(first, second) {
 }
 
 const largest = findLargest(354, 241);
-console.log('Largest is', largest);
+console.log('Largest is', largest); */
+
+
+function findLargest(first, second, third) {
+    if (first > second && first > third) {
+        return first;
+    }
+    else if (second > first && second > third) {
+        return second;
+    }
+    else {
+        return third;
+    }
+}
+
+const firstNumber = 30;
+const secondNumber = 40;
+const thirdNumber = 50;
+
+const output = findLargest(firstNumber, secondNumber, thirdNumber);
+console.log('Largest is', output);
+
+
+/* function findLargest(first, second, third) {
+    const maxNumber = Math.max(first, second, third);
+    return maxNumber;
+}
+
+const firstNumber = 30;
+const secondNumber = 40;
+const thirdNumber = 50;
+
+const output = findLargest(firstNumber, secondNumber, thirdNumber);
+console.log('Largest is', output); */
