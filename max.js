@@ -41,7 +41,7 @@ const largest = findLargest(354, 241);
 console.log('Largest is', largest); */
 
 
-function findLargest(first, second, third) {
+/* function findLargest(first, second, third) {
     if (first > second && first > third) {
         return first;
     }
@@ -58,7 +58,7 @@ const secondNumber = 40;
 const thirdNumber = 50;
 
 const output = findLargest(firstNumber, secondNumber, thirdNumber);
-console.log('Largest is', output);
+console.log('Largest is', output); */
 
 
 /* function findLargest(first, second, third) {
@@ -72,3 +72,29 @@ const thirdNumber = 50;
 
 const output = findLargest(firstNumber, secondNumber, thirdNumber);
 console.log('Largest is', output); */
+
+
+/* function findLargest(first, second, third) {
+    const maxNumber = Math.max(first, second, third);
+    return maxNumber;
+}
+
+const firstNumber = 30;
+const secondNumber = 40;
+const thirdNumber = 50;
+
+const output = findLargest(firstNumber, secondNumber, thirdNumber);
+console.log('Largest is', output); */
+
+
+function findSmallest(first, second, third) {
+    const minNumber = Math.min(first, second, third);
+    return minNumber;
+}
+
+const firstNumber = 30;
+const secondNumber = 40;
+const thirdNumber = 50;
+
+const output = findSmallest(firstNumber, secondNumber, thirdNumber);
+console.log('Smallest is', output);
